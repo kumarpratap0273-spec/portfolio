@@ -1,122 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta name="google-site-verification" content="qbv0BFeH9KIXJqsUlqTRWr1kPEyzBIneVfPUSVQKnJY" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Pratap Kumar | Portfolio</title>
+
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+    <script src="./script.js" defer></script>
 </head>
+
 <body>
 
-<header class="navbar">
-    <a href="index.html" class="logo"><span>Pratap</span></a>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
 
-    <button class="menu-toggle" aria-label="Toggle navigation">
-        ☰
-    </button>
+        <a href="index.html" class="logo">P<span>K</span></a>
 
-    <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="skills.html">Skills</a>
-        <a href="projects.html">Projects</a>
-        <a href="photos.html">Photos</a>
-        <a href="resume.html" class="nav-btn">Resume</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+        <nav class="navigation">
+
+            <a href="index.html" class="active">
+                <span>⌂</span> Home
+            </a>
+
+            <a href="about.html">
+                <span>♙</span> About
+            </a>
+
+            <a href="projects.html">
+                <span>⌘</span> Projects
+            </a>
+
+            <a href="skills.html">
+                <span>⚙</span> Skills
+            </a>
+
+            <a href="certifications.html">
+                <span>♜</span> Certificates
+            </a>
+
+            <a href="photos.html">
+                <span>▧</span> Photos
+            </a>
+
+            <a href="resume.html">
+                <span>▤</span> Resume
+            </a>
+
+            <a href="contact.html">
+                <span>✉</span> Contact
+            </a>
+
+        </nav>
+
+        <div class="sidebar-social">
+            <a href="https://github.com/kumarpratap0273-spec">GH</a>
+            <a href="https://www.linkedin.com/">in</a>
+            <a href="mailto:kumarpratap0273@gmail.com">✉</a>
+        </div>
+
+        <p class="copyright">© 2026 Pratap Kumar</p>
+
+    </aside>
+
+
+    <!-- HEADER -->
+    <!-- TOP HEADER -->
+<header class="topbar">
+
+    <div class="header-title">
+        <h2>Pratap Kumar</h2>
+        <p>Computer Science Engineer | AI & ML Student</p>
+    </div>
+
+    <div class="header-actions">
+
+        <!-- EXISTING LIVE CLOCK -->
+        <div class="live-clock">
+            <span id="liveTime">00:00:00</span>
+            <small id="liveDate">Loading date...</small>
+        </div>
+
+        <!-- DARK / LIGHT THEME -->
+        <button id="themeToggle" type="button" title="Change Theme">
+            ☀ / ☾
+        </button>
+
+        <!-- MOBILE MENU -->
+        <button id="menuToggle" type="button">
+            ☰
+        </button>
+
+    </div>
+
 </header>
 
-<main>
-<section class="hero">
-    <div class="hero-content">
-        <p class="intro">HELLO, I'M</p>
-        <h1> <span>Pratap Kumar Singh</span></h1>
-        <h2>I'm ,,,,,,,,                                  <span class="typing"></span></h2>
 
-        <p class="hero-description">
-    I am a Computer Science Engineering student specializing
-    in Artificial Intelligence and Machine Learning.
-    I am passionate about Python programming, data analysis,
-    intelligent systems and solving real-world problems
-    through technology.
-</p>
-        
+    <!-- MAIN CONTENT -->
+    <main>
 
-        <div class="hero-buttons">
-            <a href="projects.html" class="btn primary-btn">Explore Projects</a>
-            <a href="contact.html" class="btn secondary-btn">Contact Me</a>
-            <a href="mailto:kumarpratap0273@gmail.com"class="btn primary-btn">Email Me
-</a>
-        </div>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="ai-watermark">
+    <span>AI</span>
+    <span>ML</span>
+</div>
+            
 
-        <div class="social-links">
-            <a href="https://github.com/" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+            <div class="hero-content">
 
-        </div>
+                <p class="eyebrow">
+                    WELCOME TO MY PORTFOLIO
+                </p>
+
+                <h1>
+                    HI, I'M<br>
+                    <span>PRATAP</span> KUMAR
+                </h1>
+
+                <h2>
+                    Computer Science <span>Student</span>
+                </h2>
+
+                <p class="hero-description">
+                    Passionate about Artificial Intelligence,
+                    Machine Learning, programming and creating
+                    meaningful technology.
+
+                    Always learning, building and exploring
+                    new possibilities.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="projects.html" class="btn gold-btn">
+                        Explore My Work →
+                    </a>
+
+                    <a href="contact.html" class="btn outline-btn">
+                        Contact Me
+                    </a>
+
+                </div>
+
+                <div class="hero-tagline">
+                    DREAM <span>•</span>
+                    BUILD <span>•</span>
+                    INNOVATE
+                </div>
+
+            </div>
+
+
+            <!-- PROFILE IMAGE -->
+            <div class="hero-image">
+
+                <div class="gold-circle"></div>
+
+                <div class="image-frame">
+
+                    <img
+                        src="assests/profile.jpeg"
+                        alt="Pratap Kumar"
+                    >
+
+                </div>
+
+                <div class="image-label">
+                    AI & MACHINE LEARNING
+                </div>
+
+            </div>
+            <!-- 3D AI NEURAL BRAIN -->
+<div class="neural-3d" id="neural3D">
+
+    <div class="neural-orbit orbit-one"></div>
+    <div class="neural-orbit orbit-two"></div>
+
+    <div class="neural-brain">
+        <img src="assests/neural-brain.jpeg"
+             alt="3D AI Neural Brain">
     </div>
 
-    <div class="hero-image">
-        <div class="image-glow"></div>
-        <img src="assests/profile.jpeg" alt="Pratap Kumar">
-    </div>
-</section>
-
-<section class="stats">
-    <div class="stat-card">
-        <h2>5th</h2>
-        <p>Semester</p>
-    </div>
-    <div class="stat-card">
-        <h2>7.5</h2>
-        <p>CGPA</p>
-    </div>
-    <div class="stat-card">
-        <h2>AI/ML</h2>
-        <p>Specialization</p>
-    </div>
-    <div class="stat-card">
-        <h2>2026</h2>
-        <p>Learning & Building</p>
-    </div>
-</section>
-
-<section class="section">
-    <div class="section-heading">
-        <p>WHAT I DO</p>
-        <h2>My Interests</h2>
+    <div class="neural-particles">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
 
-   <div class="card-grid">
-
-    <div class="info-card">
-        <span>01</span>
-        <h3>Artificial Intelligence</h3>
-        <p>Exploring intelligent systems and practical AI applications.</p>
+    <div class="neural-label">
+        <span>AI</span> NEURAL NETWORK
     </div>
-
-    <div class="info-card">
-        <span>02</span>
-        <h3>Machine Learning</h3>
-        <p>Learning ML algorithms, data analysis and predictive models.</p>
-    </div>
-
-    <div class="info-card">
-        <span>03</span>
-        <h3>Programming</h3>
-        <p>Building programming skills using Python and C.</p>
-    </div>
-    
 
 </div>
-</section>
-</main>
 
-<footer>
-    <p>© 2026 Pratap Kumar. All Rights Reserved.</p>
-</footer>
+        </section>
+
+
+        <!-- EXPERTISE SECTION -->
+        <section class="expertise">
+
+            <div class="expertise-item">
+
+                <span>✦</span>
+
+                <div>
+                    <h3>AI & MACHINE LEARNING</h3>
+                    <p>Intelligent Systems</p>
+                </div>
+
+            </div>
+
+
+            <div class="expertise-item">
+
+                <span>▤</span>
+
+                <div>
+                    <h3>DATA SCIENCE</h3>
+                    <p>Data & Insights</p>
+                </div>
+
+            </div>
+
+
+            <div class="expertise-item">
+
+                <span>&lt;/&gt;</span>
+
+                <div>
+                    <h3>WEB DEVELOPMENT</h3>
+                    <p>Digital Experiences</p>
+                </div>
+
+            </div>
+
+
+            <div class="expertise-item">
+
+                <span>♜</span>
+
+                <div>
+                    <h3>PROBLEM SOLVING</h3>
+                    <p>Creative Thinking</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DASHBOARD SECTION -->
+        <section class="dashboard">
+
+
+            <!-- ABOUT CARD -->
+            <article class="dashboard-card">
+
+                <p class="card-label">
+                    01 / ABOUT ME
+                </p>
+
+                <h2>
+                    Passionate About
+                    <span>Technology</span>
+                </h2>
+
+                <p>
+                    I am a Computer Science Engineering student
+                    at Government Engineering College,
+                    Kishanganj.
+
+                    I enjoy exploring AI, programming
+                    and technology.
+                </p>
+
+                <a href="about.html" class="card-link">
+                    Discover More →
+                </a>
+
+            </article>
+
+
+            <!-- SKILLS CARD -->
+            <article class="dashboard-card">
+
+                <p class="card-label">
+                    02 / MY SKILLS
+                </p>
+
+                <h2>
+                    Technical <span>Skills</span>
+                </h2>
+
+                <div class="skill-tags">
+
+                    <span>Python</span>
+                    <span>C</span>
+                    <span>SQL</span>
+                    <span>DBMS</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Linux</span>
+                    <span>GitHub</span>
+
+                </div>
+
+                <a href="skills.html" class="card-link">
+                    View All Skills →
+                </a>
+
+            </article>
+
+
+            <!-- PROJECTS CARD -->
+            <article class="dashboard-card">
+
+                <p class="card-label">
+                    03 / MY PROJECTS
+                </p>
+
+                <h2>
+                    Featured <span>Work</span>
+                </h2>
+
+                <div class="project-list">
+
+                    <a href="projects.html">
+                        Personal Portfolio
+                        <span>↗</span>
+                    </a>
+
+                    <a href="projects.html">
+                        Computer Network Lab
+                        <span>↗</span>
+                    </a>
+
+                    <a href="projects.html">
+                        Hyperlocal Platform Concept
+                        <span>↗</span>
+                    </a>
+
+                </div>
+
+                <a href="projects.html" class="card-link">
+                    Explore Projects →
+                </a>
+
+            </article>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+            <p>
+                © 2026 <span>Pratap Kumar</span>
+                | Designed with passion.
+            </p>
+
+            <p>
+                DREAM • BUILD • INNOVATE
+            </p>
+
+        </footer>
+
+    </main>
 
 </body>
 </html>

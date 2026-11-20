@@ -5,96 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Pratap Kumar</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+    <script src="./script.js" defer></script>
 </head>
 <body>
 
-<header class="navbar">
-    <a href="index.html" class="logo"><span>Pratap</span></a>
-
-    <button class="menu-toggle" aria-label="Toggle navigation">
-        ☰
-    </button>
-
-    <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="skills.html">Skills</a>
-        <a href="projects.html">Projects</a>
-        <a href="photos.html">Photos</a>
-        <a href="resume.html" class="nav-btn">Resume</a>
-        <a href="contact.html">Contact</a>
+<aside class="sidebar">
+    <a href="index.html" class="logo">P<span>K</span></a>
+    <nav class="navigation">
+        <a href="index.html"><span>⌂</span> Home</a>
+        <a href="about.html"><span>♙</span> About</a>
+        <a href="projects.html"><span>⌘</span> Projects</a>
+        <a href="skills.html"><span>⚙</span> Skills</a>
+        <a href="certifications.html"><span>♜</span> Certificates</a>
+        <a href="photos.html"><span>▧</span> Photos</a>
+        <a href="resume.html"><span>▤</span> Resume</a>
+        <a href="contact.html" class="active"><span>✉</span> Contact</a>
     </nav>
-</header>
-<main class="page-container">
+    <div class="sidebar-social">
+        <a href="https://github.com/kumarpratap0273-spec">GH</a>
+        <a href="https://www.linkedin.com/">in</a>
+        <a href="mailto:kumarpratap0273@gmail.com">✉</a>
+    </div>
+    <p class="copyright">© 2026 Pratap Kumar</p>
+</aside>
 
-    <div class="section-heading">
-        <p>LET'S CONNECT</p>
-        <h1>Contact <span>Me</span></h1>
+<!-- TOP HEADER -->
+<header class="topbar">
+
+    <div class="header-title">
+        <h2>Pratap Kumar</h2>
+        <p>Computer Science Engineer | AI & ML Student</p>
     </div>
 
-    <section class="contact-layout">
+    <div class="header-actions">
 
-        <div class="contact-info">
-            <h2>Let's Talk!</h2>
-            <p>
-                Have an internship opportunity, project idea or
-                collaboration proposal? Feel free to contact me.
-            </p>
-
-           <div class="contact-detail">
-    <h3>Email</h3>
-
-    <a href="mailto:kumarpratap0273@gmail.com">
-        kumarpratap0273@gmail.com
-    </a>
-</div>
-            <div class="contact-detail">
-                <h3>Location</h3>
-                <p>Kishanganj, Bihar, India</p>
-            </div>
-
-            <div class="contact-detail">
-                <h3>GitHub</h3>
-                <a href="https://github.com/kumarpratap0273-spec"
-                   target="_blank">Visit My GitHub</a>
-            </div>
-
-            <div class="contact-detail">
-                <h3>LinkedIn</h3>
-                <a href="https://www.linkedin.com/"
-                   target="_blank">Visit LinkedIn</a>
-            </div>
+        <!-- EXISTING LIVE CLOCK -->
+        <div class="live-clock">
+            <span id="liveTime">00:00:00</span>
+            <small id="liveDate">Loading date...</small>
         </div>
 
-        <form class="contact-form" id="contactForm">
+        <!-- DARK / LIGHT THEME -->
+        <button id="themeToggle" type="button" title="Change Theme">
+            ☀ / ☾
+        </button>
 
-            <input type="text" id="name"
-                   placeholder="Your Name" required>
+        <!-- MOBILE MENU -->
+        <button id="menuToggle" type="button">
+            ☰
+        </button>
 
-            <input type="email" id="email"
-                   placeholder="Your Email" required>
+    </div>
 
-            <input type="text" id="subject"
-                   placeholder="Subject" required>
+</header>
 
-            <textarea id="message"
-                      placeholder="Write your message..."
-                      rows="6" required></textarea>
+<main>
+<section class="page-wrap">
 
-            <button type="submit" class="btn primary-btn">
-                Send Message
-            </button>
+    <div class="ai-watermark">
+    <span>AI</span>
+    <span>ML</span>
+</div>
 
-        </form>
+    <p class="section-kicker">LET'S CONNECT</p>
+    <h1 class="page-title">Contact <span>Me</span></h1>
+    <p class="page-intro">
+        Have a question, project idea or opportunity? Feel free to connect.
+    </p>
 
-    </section>
+    <div class="content-grid">
 
-</main>
+        <div class="content-card">
+            <h2>Email</h2>
+            <p>For enquiries and professional communication.</p>
+            <a href="mailto:kumarpratap0273@gmail.com">
+                kumarpratap0273@gmail.com →
+            </a>
+        </div>
 
-<footer>
-    <p>© 2026 Pratap Kumar. All Rights Reserved.</p>
+        <div class="content-card">
+            <h2>GitHub</h2>
+            <p>Explore my coding projects and practical work.</p>
+            <a href="https://github.com/kumarpratap0273-spec"
+               target="_blank" rel="noopener">
+                Visit GitHub →
+            </a>
+        </div>
+
+        <div class="content-card">
+            <h2>LinkedIn</h2>
+            <p>Connect with me professionally.</p>
+            <a href="https://www.linkedin.com/"
+               target="_blank" rel="noopener">
+                Visit LinkedIn →
+            </a>
+            <p>Replace this link with your actual LinkedIn profile URL.</p>
+        </div>
+
+        <div class="content-card">
+            <h2>Location</h2>
+            <p>Kishanganj, Bihar, India</p>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <p>© 2026 <span>Pratap Kumar</span> | Designed with passion.</p>
+    <p>DREAM • BUILD • INNOVATE</p>
 </footer>
-
+</main>
 </body>
 </html>

@@ -3,96 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me | Pratap Kumar</title>
+    <title>About | Pratap Kumar</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+    <script src="./script.js" defer></script>
 </head>
 <body>
 
-<header class="navbar">
-    <a href="index.html" class="logo"><span>Pratap</span></a>
-
-    <button class="menu-toggle" aria-label="Toggle navigation">
-        ☰
-    </button>
-
-    <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="skills.html">Skills</a>
-        <a href="projects.html">Projects</a>
-        <a href="photos.html">Photos</a>
-        <a href="resume.html" class="nav-btn">Resume</a>
-        <a href="contact.html">Contact</a>
+<aside class="sidebar">
+    <a href="index.html" class="logo">P<span>K</span></a>
+    <nav class="navigation">
+        <a href="index.html"><span>⌂</span> Home</a>
+        <a href="about.html" class="active"><span>♙</span> About</a>
+        <a href="projects.html"><span>⌘</span> Projects</a>
+        <a href="skills.html"><span>⚙</span> Skills</a>
+        <a href="certifications.html"><span>♜</span> Certificates</a>
+        <a href="photos.html"><span>▧</span> Photos</a>
+        <a href="resume.html"><span>▤</span> Resume</a>
+        <a href="contact.html"><span>✉</span> Contact</a>
     </nav>
-</header>
+    <div class="sidebar-social">
+        <a href="https://github.com/kumarpratap0273-spec">GH</a>
+        <a href="https://www.linkedin.com/">in</a>
+        <a href="mailto:kumarpratap0273@gmail.com">✉</a>
+    </div>
+    <p class="copyright">© 2026 Pratap Kumar</p>
+</aside>
 
-<main class="page-container">
+<!-- TOP HEADER -->
+<header class="topbar">
 
-    <div class="section-heading">
-        <p>GET TO KNOW ME</p>
-        <h1>About <span>Me</span></h1>
+    <div class="header-title">
+        <h2>Pratap Kumar</h2>
+        <p>Computer Science Engineer | AI & ML Student</p>
     </div>
 
-    <section class="about-layout">
-        <div class="about-image">
-            <img src="assests/profile.jpeg" alt="Pratap Kumar">
+    <div class="header-actions">
+
+        <!-- EXISTING LIVE CLOCK -->
+        <div class="live-clock">
+            <span id="liveTime">00:00:00</span>
+            <small id="liveDate">Loading date...</small>
         </div>
 
-        <div class="about-content">
-            <h2>I'm Pratap Kumar</h2>
-            <h3>Computer Science Engineering Student</h3>
+        <!-- DARK / LIGHT THEME -->
+        <button id="themeToggle" type="button" title="Change Theme">
+            ☀ / ☾
+        </button>
 
+        <!-- MOBILE MENU -->
+        <button id="menuToggle" type="button">
+            ☰
+        </button>
+
+    </div>
+
+</header>
+<main>
+<section class="page-wrap">
+    <div class="ai-watermark">
+    <span>AI</span>
+    <span>ML</span>
+</div>
+    <p class="section-kicker">GET TO KNOW ME</p>
+    <h1 class="page-title">About <span>Me</span></h1>
+    <p class="page-intro">
+        A curious Computer Science student passionate about technology,
+        programming and continuous learning.
+    </p>
+
+    <div class="content-grid">
+        <div class="content-card">
+            <h2>Who Am I?</h2>
             <p>
-                I am a B.Tech student pursuing Computer Science and
-                Engineering with specialization in Artificial Intelligence
-                and Machine Learning.
+                Hello! I am Pratap Kumar, a Computer Science Engineering
+                student specializing in Artificial Intelligence and
+                Machine Learning.
             </p>
-
             <p>
-                I am interested in web development, software engineering,
-                artificial intelligence, machine learning and cybersecurity.
-                I enjoy learning new technologies and building practical projects.
+                I enjoy learning programming, exploring AI and ML,
+                understanding computer networks and building practical
+                projects.
             </p>
-
             <p>
-                My goal is to become a skilled software professional
-                and contribute to innovative technology solutions.
+                My goal is to improve my technical knowledge and develop
+                useful solutions through technology.
             </p>
+        </div>
 
-            <div class="details">
-                <p><strong>Name:</strong> Pratap Kumar</p>
-                <p><strong>College:</strong> Government Engineering College, Kishanganj</p>
-                <p><strong>Branch:</strong> CSE (AI & ML)</p>
-                <p><strong>Semester:</strong> 5th</p>
-                <p><strong>CGPA:</strong> 7.5</p>
-                <p><strong>Interests:</strong> AI/ML, Web Development, DSA</p>
+        <div class="content-card">
+            <h2>Personal Information</h2>
+            <div class="info-list">
+                <div class="info-row"><strong>Name</strong><span>Pratap Kumar</span></div>
+                <div class="info-row"><strong>College</strong><span>Government Engineering College, Kishanganj</span></div>
+                <div class="info-row"><strong>Branch</strong><span>CSE (AI & ML)</span></div>
+                <div class="info-row"><strong>Semester</strong><span>V</span></div>
+                <div class="info-row"><strong>CGPA</strong><span>7.5</span></div>
+                <div class="info-row"><strong>Location</strong><span>Kishanganj, Bihar, India</span></div>
+                <div class="info-row"><strong>Email</strong><span>kumarpratap0273@gmail.com</span></div>
             </div>
-
-            <a href="resume.html" class="btn primary-btn">View My Resume</a>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="section-heading">
-            <p>MY JOURNEY</p>
-            <h2>Education</h2>
         </div>
 
-        <div class="timeline">
-            <div class="timeline-item">
-                <h3>B.Tech – Computer Science Engineering</h3>
-                <p>Government Engineering College, Kishanganj</p>
-                <span>AI & ML Specialization | Currently Pursuing</span>
-            </div>
+        <div class="content-card">
+            <h2>My Interests</h2>
+            <div class="tag">Artificial Intelligence</div>
+            <div class="tag">Machine Learning</div>
+            <div class="tag">Programming</div>
+            <div class="tag">Cybersecurity</div>
+            <div class="tag">Computer Networks</div>
+            <div class="tag">Web Development</div>
         </div>
-    </section>
 
-</main>
+        <div class="content-card">
+            <h2>My Approach</h2>
+            <p>
+                I believe in learning by doing. I focus on understanding
+                concepts, practising regularly and applying knowledge
+                through projects.
+            </p>
+        </div>
+    </div>
+</section>
 
-<footer>
-    <p>© 2026 Pratap Kumar. All Rights Reserved.</p>
+<footer class="footer">
+    <p>© 2026 <span>Pratap Kumar</span> | Designed with passion.</p>
+    <p>DREAM • BUILD • INNOVATE</p>
 </footer>
-
+</main>
 </body>
 </html>

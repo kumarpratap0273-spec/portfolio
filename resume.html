@@ -5,87 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume | Pratap Kumar</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+    <script src="./script.js" defer></script>
 </head>
 <body>
 
-<header class="navbar">
-    <a href="index.html" class="logo"><span>Pratap</span></a>
-
-    <button class="menu-toggle" aria-label="Toggle navigation">
-        ☰
-    </button>
-
-    <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="skills.html">Skills</a>
-        <a href="projects.html">Projects</a>
-        <a href="photos.html">Photos</a>
-        <a href="resume.html" class="nav-btn">Resume</a>
-        <a href="contact.html">Contact</a>
+<aside class="sidebar">
+    <a href="index.html" class="logo">P<span>K</span></a>
+    <nav class="navigation">
+        <a href="index.html"><span>⌂</span> Home</a>
+        <a href="about.html"><span>♙</span> About</a>
+        <a href="projects.html"><span>⌘</span> Projects</a>
+        <a href="skills.html"><span>⚙</span> Skills</a>
+        <a href="certifications.html"><span>♜</span> Certificates</a>
+        <a href="photos.html"><span>▧</span> Photos</a>
+        <a href="resume.html" class="active"><span>▤</span> Resume</a>
+        <a href="contact.html"><span>✉</span> Contact</a>
     </nav>
-</header>
+    <div class="sidebar-social">
+        <a href="https://github.com/kumarpratap0273-spec">GH</a>
+        <a href="https://www.linkedin.com/">in</a>
+        <a href="mailto:kumarpratap0273@gmail.com">✉</a>
+    </div>
+    <p class="copyright">© 2026 Pratap Kumar</p>
+</aside>
 
-<main class="page-container">
+<<!-- TOP HEADER -->
+<header class="topbar">
 
-    <div class="section-heading">
-        <p>MY PROFESSIONAL PROFILE</p>
-        <h1>My <span>Resume</span></h1>
+    <div class="header-title">
+        <h2>Pratap Kumar</h2>
+        <p>Computer Science Engineer | AI & ML Student</p>
     </div>
 
-    <section class="resume-container">
+    <div class="header-actions">
 
-        <div class="resume-header">
-            <h1>Pratap Kumar</h1>
-            <p>Computer Science Engineering | AI & ML</p>
-            <p>Government Engineering College, Kishanganj</p>
+        <!-- EXISTING LIVE CLOCK -->
+        <div class="live-clock">
+            <span id="liveTime">00:00:00</span>
+            <small id="liveDate">Loading date...</small>
         </div>
 
-        <div class="resume-section">
-            <h2>Career Objective</h2>
-            <p>
-                Motivated Computer Science Engineering student specializing
-                in AI and ML, interested in software development,
-                web technologies and emerging technologies.
-            </p>
-        </div>
+        <!-- DARK / LIGHT THEME -->
+        <button id="themeToggle" type="button" title="Change Theme">
+            ☀ / ☾
+        </button>
 
-        <div class="resume-section">
-            <h2>Education</h2>
-            <p><strong>B.Tech – CSE (AI & ML)</strong></p>
-            <p>Government Engineering College, Kishanganj</p>
-            <p>Currently in 5th Semester | CGPA: 7.5</p>
-        </div>
+        <!-- MOBILE MENU -->
+        <button id="menuToggle" type="button">
+            ☰
+        </button>
 
-        <div class="resume-section">
-            <h2>Technical Skills</h2>
-            <p>HTML, CSS, JavaScript, Python, C, SQL, DBMS, Linux, GitHub</p>
-        </div>
+    </div>
 
-        <div class="resume-section">
-            <h2>Projects</h2>
-            <p>Personal Portfolio Website</p>
-            <p>Hyperlocal Services Platform</p>
-            <p>Computer Network Lab</p>
-        </div>
+</header>
 
-        <div class="resume-section">
-            <h2>Areas of Interest</h2>
-            <p>Artificial Intelligence, Machine Learning, Web Development and Cybersecurity.</p>
-        </div>
+<main>
+<section class="page-wrap">
+    <div class="ai-watermark">
+    <span>AI</span>
+    <span>ML</span>
+</div>
 
-        <a href="assets/resume.pdf" download class="btn primary-btn">
-            Download PDF Resume
+    <p class="section-kicker">MY PROFILE</p>
+    <h1 class="page-title">My <span>Resume</span></h1>
+    <p class="page-intro">
+        Explore my academic background, technical interests and projects.
+    </p>
+
+    <div class="resume-box">
+        <h2>Pratap Kumar</h2>
+        <p>Computer Science Engineering (AI & ML) Student</p>
+        <p>Government Engineering College, Kishanganj</p>
+        <p>Kishanganj, Bihar, India</p>
+        <p>Email: kumarpratap0273@gmail.com</p>
+
+        <a href="assets/resume.pdf" target="_blank" rel="noopener" class="btn">
+            View Resume →
         </a>
 
-    </section>
+        <a href="assets/resume.pdf" download class="btn">
+            Download Resume ↓
+        </a>
+    </div>
+</section>
 
-</main>
-
-<footer>
-    <p>© 2026 Pratap Kumar. All Rights Reserved.</p>
+<footer class="footer">
+    <p>© 2026 <span>Pratap Kumar</span> | Designed with passion.</p>
+    <p>DREAM • BUILD • INNOVATE</p>
 </footer>
-
+</main>
 </body>
 </html>

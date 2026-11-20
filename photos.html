@@ -4,75 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photos | Pratap Kumar</title>
-
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+    <script src="./script.js" defer></script>
 </head>
-
 <body>
 
-<header class="navbar">
-    <a href="index.html" class="logo"><span>Pratap</span></a>
-
-    <button class="menu-toggle" aria-label="Toggle navigation">
-        ☰
-    </button>
-
-    <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="skills.html">Skills</a>
-        <a href="projects.html">Projects</a>
-        <a href="photos.html">Photos</a>
-        <a href="resume.html" class="nav-btn">Resume</a>
-        <a href="contact.html">Contact</a>
+<aside class="sidebar">
+    <a href="index.html" class="logo">P<span>K</span></a>
+    <nav class="navigation">
+        <a href="index.html"><span>⌂</span> Home</a>
+        <a href="about.html"><span>♙</span> About</a>
+        <a href="projects.html"><span>⌘</span> Projects</a>
+        <a href="skills.html"><span>⚙</span> Skills</a>
+        <a href="certifications.html"><span>♜</span> Certificates</a>
+        <a href="photos.html" class="active"><span>▧</span> Photos</a>
+        <a href="resume.html"><span>▤</span> Resume</a>
+        <a href="contact.html"><span>✉</span> Contact</a>
     </nav>
-</header>
+    <div class="sidebar-social">
+        <a href="https://github.com/kumarpratap0273-spec">GH</a>
+        <a href="https://www.linkedin.com/">in</a>
+        <a href="mailto:kumarpratap0273@gmail.com">✉</a>
+    </div>
+    <p class="copyright">© 2026 Pratap Kumar</p>
+</aside>
 
-<main class="page-container">
+<!-- TOP HEADER -->
+<header class="topbar">
 
-    <div class="section-heading">
-        <p>MY MEMORIES</p>
-        <h1>Photo <span>Gallery</span></h1>
+    <div class="header-title">
+        <h2>Pratap Kumar</h2>
+        <p>Computer Science Engineer | AI & ML Student</p>
     </div>
 
-    <section class="gallery">
+    <div class="header-actions">
 
-        <div class="gallery-item">
-            <img src="assests/profile.jpeg" alt="My Profile">
-            <div class="gallery-overlay">
-                <h3>My Profile</h3>
-            </div>
+        <!-- EXISTING LIVE CLOCK -->
+        <div class="live-clock">
+            <span id="liveTime">00:00:00</span>
+            <small id="liveDate">Loading date...</small>
         </div>
 
-        <div class="gallery-item">
-            <img src="assests/photo1.jpg" alt="Photo 1">
-            <div class="gallery-overlay">
-                <h3>My Memories</h3>
-            </div>
+        <!-- DARK / LIGHT THEME -->
+        <button id="themeToggle" type="button" title="Change Theme">
+            ☀ / ☾
+        </button>
+
+        <!-- MOBILE MENU -->
+        <button id="menuToggle" type="button">
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+<main>
+<section class="page-wrap">
+    <div class="ai-watermark">
+    <span>AI</span>
+    <span>ML</span>
+</div>
+
+    <p class="section-kicker">MY MEMORIES</p>
+    <h1 class="page-title">Photo <span>Gallery</span></h1>
+    <p class="page-intro">A collection of photographs and memorable moments.</p>
+
+    <div class="gallery">
+        <div class="content-card">
+            <img src="assests/profile.jpeg" alt="Pratap Kumar photo 1" loading="lazy">
         </div>
 
-        <div class="gallery-item">
-            <img src="assests/photo2.jpg" alt="Photo 2">
-            <div class="gallery-overlay">
-                <h3>College Life</h3>
-            </div>
+        <div class="content-card">
+            <img src="assests/college.jpeg" alt="Government Engineering College" loading="lazy">
         </div>
 
-        <div class="gallery-item">
-            <img src="assests/photo3.jpg" alt="Photo 3">
-            <div class="gallery-overlay">
-                <h3>Special Moments</h3>
-            </div>
+        <div class="content-card">
+            <img src="assests/" alt="Pratap Kumar photo 3" loading="lazy">
         </div>
+    </div>
+</section>
 
-    </section>
-
-</main>
-
-<footer>
-    <p>© 2026 Pratap Kumar. All Rights Reserved.</p>
+<footer class="footer">
+    <p>© 2026 <span>Pratap Kumar</span> | Designed with passion.</p>
+    <p>DREAM • BUILD • INNOVATE</p>
 </footer>
-
+</main>
 </body>
 </html>
