@@ -1404,3 +1404,6 @@ body.light-theme #themeToggle {
         height: 190px;
     }
 }
+.hero h1 {
+    color: #D4AF37;
+}
